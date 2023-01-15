@@ -31,7 +31,7 @@ const Blog = ({ blog, user, handleUpdate }) => {
     }
   }
   return (
-    <div style={blogStyle} data-testid='blog'>
+    <div className='blog' style={blogStyle} data-testid='blog'>
       {blog.title}{' '}
       <button onClick={toggleVisibility}>{visible ? 'hide' : 'show'}</button>
       <div style={showWhenVisible}>
